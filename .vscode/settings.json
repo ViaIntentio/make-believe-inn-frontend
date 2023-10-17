@@ -1,0 +1,118 @@
+{
+  "todo-tree.filtering.excludeGlobs": [
+    "**/vendor/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/bower_components/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/.git/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/*.woff",
+    "**/*.woff2"
+  ],
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "[x]",
+    "[ ]",
+    "BUG",
+    "WARN",
+    "!!",
+    "??",
+    "INFO",
+    "***",
+    "eslint",
+    "tslint",
+    "@ts",
+    "REVIEW",
+    "REF",
+    "///"
+  ],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "text-and-comment"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "///": {
+      "foreground": "#656565",
+      "hideFromStatusBar": true,
+      "hideFromTree": true
+    },
+    "TODO": {
+      "foreground": "#FF8C00",
+      "icon": "issue-draft"
+    },
+    "[ ]": {
+      "foreground": "#FF8C00",
+      "type": "tag"
+    },
+    "[x]": {
+      "foreground": "#64dd17",
+      "type": "tag",
+      "hideFromStatusBar": true,
+      "hideFromTree": true
+    },
+    "FIXME": {
+      "foreground": "#ffbb00",
+      "icon": "tools"
+    },
+    "BUG": {
+      "foreground": "#cc1100"
+    },
+    "WARN": {
+      "foreground": "#ffc107"
+    },
+    "??": {
+      "foreground": "#3498DB",
+      "italic": true,
+      "icon": "question"
+    },
+    "!!": {
+      "foreground": "#cc1100",
+      "fontStyle": "italic",
+      "icon": "alert"
+    },
+    "INFO": {
+      "foreground": "#0dcaf0",
+      "italic": true,
+      "icon": "info"
+    },
+    "***": {
+      "foreground": "#98C379",
+      "italic": true,
+      "icon": "north-star"
+    },
+    "eslint": {
+      "fontStyle": "italic",
+      "textDecoration": "underline",
+      "foreground": "#7c7ce9",
+      "hideFromStatusBar": true,
+      "hideFromTree": true
+    },
+    "tslint": {
+      "fontStyle": "italic",
+      "foreground": "#b30202",
+      "icon": "stop"
+    },
+    "@ts": {
+      "fontStyle": "italic",
+      "textDecoration": "underline",
+      "foreground": "#4d89c9",
+      "hideFromStatusBar": true,
+      "hideFromTree": true
+    },
+    "REVIEW": {
+      "foreground": "#a8d1df",
+      "icon": "search"
+    },
+    "REF": {
+      "foreground": "#0d6efd",
+      "icon": "link"
+    }
+  },
+}
