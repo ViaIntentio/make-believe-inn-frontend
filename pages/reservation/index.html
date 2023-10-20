@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,24 @@
   <link rel="stylesheet" href="/css/fullcalendar/main.css">
   <script src="/css/fullcalendar/main.js"></script>
 
-  <title>reservation</title>
+  <style>
+      .fc-event {
+      position: absolute;
+      height: calc(4rem + 3px);
+      width: 100%;
+      border-radius: 0px;
+      transform: translateY(-35px) translateX(-2px);
+      opacity: 60%;
+    }
+    @media (min-width: 768px) {
+      .fc-event {
+        height: calc(8rem + 5px);
+      }
+    }
+
+  </style>
+
+  <title>Reservation</title>
 </head>
 <body>
   <main class="container mt-4">
@@ -24,11 +41,22 @@
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
   crossorigin="anonymous"
 ></script>
+
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+
+
 <script>
   const element = document.getElementById('calendar');
   const calendar = new FullCalendar.Calendar(element, {
     initialView: 'dayGridMonth',
-    locale: 'pt-br'
+    locale: 'pt-br',
+    events: [
+      {
+        title: ' ',
+        start: '2023-10-23',
+        backgroundColor: 'lightgreen',
+      }
+    ]
   });
 
   calendar.render();
