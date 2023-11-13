@@ -1,5 +1,6 @@
 import { ref } from 'vue'
-import axios, { AxiosResponse } from "axios"
+import axios from "axios";
+import type { AxiosResponse } from 'axios';
 
 const apiClinet = axios.create({
     baseURL: import.meta.env.VITE_API_URL,
