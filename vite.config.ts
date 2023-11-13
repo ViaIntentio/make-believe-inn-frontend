@@ -22,7 +22,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     ],
     base: './',
     server: {
-      port: ENV.VITE_PORT,
+      port: ENV.VITE_PORT || 8500,
       //host: '0.0.0.0', // Use if  need to expose
       strictPort: true,
     },
