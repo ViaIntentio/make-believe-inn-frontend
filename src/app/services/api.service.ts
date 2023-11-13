@@ -2,7 +2,7 @@ import { ref } from 'vue'
 import axios, { AxiosResponse } from "axios"
 
 const apiClinet = axios.create({
-    baseURL: 'http://localhost/api/v1'
+    baseURL: import.meta.env.VITE_API_URL,
 })
 
 export const ApiService = <T = any>(url: string, config: Object= {}) => {
